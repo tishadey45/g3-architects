@@ -16,10 +16,22 @@
 .bg-light{
     background: rgba(255, 144, 14, 0.1);
 }
+.btn-primary{
+    background-color:  rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    border: none ;
+    padding: 20px 25px;
+    /* font-size: 1.25px; */
+    font-weight: 600;
+    /* rgba(255, 144, 14, 1) */
+/* rgba(255, 255, 255, 1) */
+}
 /* navbar styles */
 .navbar{
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+    align-items: center;
 }
 .nav-list-item{
     list-style:none;
@@ -33,4 +45,29 @@
 .navbar,.banner{
  max-width: 1440px;
  margin: 0 auto;
+}
+/* banner styles */
+.banner-content{
+     min-width: 860px;
+     margin: 0 auto;
+     text-align: center;
+     margin-bottom: 50px;
+}
+.banner-title{
+    color: rgba(19,19,19,1);
+    font-size: 64px;
+    font-weight: 700;
+    font-style: bold;
+}
+.banner-description{
+    color: rgba(114,114,114,1);
+}
+            
+.banner-image{
+    width: 100%;
+}
+@media screen and (max-width: 576px) {
+   .navbar, .nav-list{
+    flex-direction: column;
+   }
 }
