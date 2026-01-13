@@ -122,6 +122,8 @@ main {
   }
  .feature-enjoys{
     gap: 50px;
+    align-items: center;
+    width: 1440px;
  }
             
   
@@ -134,6 +136,11 @@ main {
     border-radius: 8px;
     width: 708px;
     height: 982px;
+    flex: 0 0 50%;
+}
+.feature-enjoy-container{
+    flex: 0 0 50%;
+    height: 708px;
 }
 .btn-primary-two{
      border-radius: 4px;
@@ -145,6 +152,39 @@ main {
      font-weight: 400;
      line-height: 26px;
      padding: 20px 25px;
+}
+/* some facts style */
+
+.fact{
+/* box-sizing: border-box; */
+border: 1px solid rgba(255, 144, 14, 1);
+width: 240px;
+height: 240px;
+border-radius: 8px;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+.some-description{
+  color:#727272 ;
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 540px;
+}
+.fact-number{
+  /* color: Dark 02; */
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  color:#424242;
+  margin-top: 10px;
+}
+.facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -163,6 +203,11 @@ main {
   }
   .team-img-container{
     grid-template-columns: repeat(1, 1fr);
+  }
+  .facts-container{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: 24px;
   }
   .team-feature-container{
     margin-left: 20px;
